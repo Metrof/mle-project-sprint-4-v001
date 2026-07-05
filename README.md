@@ -65,7 +65,8 @@ jupyter lab --ip=0.0.0.0 --no-browser
 
 Для запуска сервиса выполните следующие шаги:
 1. Перейти в корневую дирректорию проекта и активировать виртуальное окружение.
-2. Удостоверится в наличии файлов: `top_popular.parquet`, `recommendations.parquet` и `similar.parquet`.
+2. Удостоверится в наличии файлов: `top_popular.parquet`, `recommendations.parquet` и `similar.parquet`. 
+    ***Если этих файлов нет, необходимо предварительно выполнить все ячейки в ноутбуке `recommendations.ipynb`
 3. Установите необходимые зависимости из файла `requirements.txt`: pip install -r requirements.txt
 4. Выполните команду в терминале: uvicorn recommendations_service:app --reload --host 127.0.0.1 --port 8000
 
